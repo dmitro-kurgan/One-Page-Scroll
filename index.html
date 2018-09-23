@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>One Page Scroll</title>
+</head>
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.jlehmann {
+			width: 100%;
+			height: 100vh;
+			position: relative;
+			overflow: hidden;
+		}
+		.jlehmann h1 {
+			margin: auto;
+			text-align: center;
+			line-height: 100vh;
+		}
+		.layer {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.layer-red {
+			background-color: red;
+		}
+		.layer-blue {
+			background-color: blue;
+		}
+		.layer-yellow {
+			background-color: yellow;
+		}
+		.layer-pink {
+			background-color: pink;
+		}
+		.layer-green {
+			background-color: green;
+		}		
+	</style>
+	<div class="jlehmann">
+		<div class="layer layer-red">
+			<h1>Block 1</h1>
+		</div>
+		<div class="layer layer-blue">
+			<h1>Block 2</h1>
+		</div>
+		<div class="layer layer-yellow">
+			<h1>Block 3</h1>
+		</div>
+		<div class="layer layer-pink">
+			<h1>Block 4</h1>
+		</div>
+		<div class="layer layer-green">
+			<h1>Block 5</h1>
+		</div>
+	</div>
+	<script src="src/script.js"></script>
+</body>
+</html>
